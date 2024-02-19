@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Title</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--  nivea text  -->
+  <div class="container">
+    <div class="text-center">
+      <img src="/images/nivea.png" alt="nivea text" class="third-image-style" />
+    </div>
+  </div>
+
+  <div class="container">
+    <button type="button" id="clsBtn" onclick="toggleImg()" class="btn-x-close">X</button>
+  </div>
+
+  <!--  model  -->
+  <div class="container">
+    <div class="text-center">
+      <img src="/images/model.jpg" id="model-img" alt="model" class="image-style" />
+    </div>
+  </div>
+
+  <div class="text-center mt-3">
+    <button type="button" id="lipBtn" onclick="lipsDiv()" class="btn btn-primary mr-2">Lips</button>
+    <button type="button" id="cheekBtn" onclick="cheekDiv()" class="btn btn-primary mr-2">Cheeks</button>
+    <button type="button" id="eyesBtn" onclick="eyesDiv()" class="btn btn-primary mr-2">Eyes</button>
+    <button type="button" id="looksBtn" onclick="looksDiv()" class="btn btn-primary">Looks</button>
+  </div>
+  </div>
+
+
+
+
+
+  <!--  logo  -->
+  <img src="/images/nivea-logo.png" alt="logo" class="second-image-style" />
+
+
+  <div class="container disclaimer" id="disclDiv" style="display: block;">
+    <div class="text-center stack-heading" id="Sheading">Disclaimer</div>
+    <div class="disclaimer-text">
+      <p>This website does not endorse any specific lipstick brands or products. The names and logos used are for
+        illustrative purposes only.</p>
+    </div>
+  </div>
+
+
+  <div class="container lipsticks" id="lipsDiv" style="display: none;">
+    <div class="text-center stack-heading" id="Sheading">Lips</div>
+    <div class="main-buttons">
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+    </div>
+  </div>
+
+  <div class="container Cheektint" id="cheekDiv" style="display: none;">
+    <div class="text-center stack-heading" id="Sheading">Cheeks</div>
+    <div class="main-buttons">
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+    </div>
+  </div>
+
+  <div class="container eyeshade" id="eyesDiv" style="display: none;">
+    <div class="text-center stack-heading" id="Sheading">Eyes</div>
+    <div class="main-buttons">
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+    </div>
+  </div>
+
+
+  <div class="container looks" id="looksDiv" style="display: none;">
+    <div class="text-center stack-heading" id="Sheading"></div>
+    <div class="main-buttons">
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+      <button type="button" class="btn lipstick-btn"></button>
+
+
+
+      <script>
+
+        function disclDiv() {
+          document.getElementById("disclDiv").style.display = "block";
+          document.getElementById("lipsDiv").style.display = "none";
+          document.getElementById("cheekDiv").style.display = "none";
+          document.getElementById("eyesDiv").style.display = "none";
+        }
+
+        function lipsDiv() {
+          document.getElementById("disclDiv").style.display = "none";
+          document.getElementById("lipsDiv").style.display = "block";
+          document.getElementById("cheekDiv").style.display = "none";
+          document.getElementById("eyesDiv").style.display = "none";
+        }
+
+        function cheekDiv() {
+          document.getElementById("disclDiv").style.display = "none";
+          document.getElementById("lipsDiv").style.display = "none";
+          document.getElementById("cheekDiv").style.display = "block";
+          document.getElementById("eyesDiv").style.display = "none";
+
+        }
+
+        function eyesDiv() {
+          document.getElementById("disclDiv").style.display = "none";
+          document.getElementById("lipsDiv").style.display = "none";
+          document.getElementById("cheekDiv").style.display = "none";
+          document.getElementById("eyesDiv").style.display = "block";
+
+        }
+
+        function looksDiv() {
+          if (
+            document.getElementById("looksDiv").style.display === "block") { document.getElementById("looksDiv").style.display = "none" }
+          else {
+            document.getElementById("looksDiv").style.display = "block"
+          }
+
+        }
+
+
+
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

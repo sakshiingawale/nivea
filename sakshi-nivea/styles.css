@@ -1,0 +1,138 @@
+body{
+  overflow: hidden;
+}
+
+.third-image-style{
+  max-width: 100px;
+  padding-top: 24px;
+
+}
+
+.btn-x-close {
+position: fixed;
+right: 100px;
+border-radius: 50%; 
+background-color: darkblue;  
+color: white;
+width: 50px;
+height: 50px;
+font-size: 30px;
+top: 70px;
+
+}
+
+.image-style {
+  max-width: 100%;
+  width: auto;
+  height: 1114px;
+  margin-top: 10px;
+  
+}
+
+.looks {
+  position: fixed;
+  /* top: 20px; 
+  right: 50%; 
+  transform: translateX(-50%);  */
+  text-align: center; 
+}
+
+.looks .main-buttons {
+    position: fixed;
+    right: -5%;
+    transform: rotate(-90deg);
+    top: 42vh;
+    height: 0;
+}
+
+.looks .main-buttons  button{
+  transform: rotate(90deg);
+}
+
+.second-image-style {
+  float: right;
+  max-width: 500px;
+  position: fixed;
+  bottom: 109px;
+  right: -86px;
+}
+
+/* .image-overlap {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.rotate-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: rotate(-90deg) translateY(-100%);
+  }
+
+.stack-heading {
+margin-top: 20px;
+color: blue;
+font-size: 24px;
+font-weight: 600;
+
+  }
+
+  /* .lipsticks {
+    display: block;
+
+  }
+   */
+  .main-buttons {
+    /* transform: rotate(90deg); */
+    margin-bottom: 0px;
+  }
+  
+  .rotate-buttons .btn {
+    transform: rotate(0deg);
+  }
+  
+/* .row rotate-buttons::after {
+  content: "";
+  clear: both;
+  width: -50px;
+  display: table;
+  position: relative;
+} */
+
+
+  /* .main-buttons{
+    margin: auto 10px;
+    padding-top: 150px; 
+    min-height: 100%; 
+  } */
+
+  .main-buttons{
+
+    /* min-height: 100%; */
+    position: fixed;
+    bottom: -4%;
+  }
+
+  .lipstick-btn {
+    width: 80px; 
+    height: 100px; 
+    background-image: url('https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRLbUIn_qwmhDdLNi0HBOX089tuX7OqNbBxoE-F6MiF6Bbuh885vz6NAioS4f6u0HxDunxc-LLC3g&usqp=CAc'); /* Link to the favicon image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent; 
+    /* border: none;  */
+   
+  }
+  
+  .lipstick-btn:hover {
+    /* color: #c84873; */
+  transform: translateY(-50px); 
+  transition: color 0.3s ease, transform 0.3s ease; 
+  }
+  
+
+  .btn:active {
+    border-color: transparent !important;
+  }
+
